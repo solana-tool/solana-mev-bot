@@ -1,7 +1,11 @@
 ## ⚡ Solana MEV Bot – Ultra-Low Latency Arbitrage, Sandwich & Liquidation Engine
 
 **Solana MEV Bot** is a **state-of-the-art, high-frequency, multi-strategy Sol MEV bot** designed for **maximum profit extraction on the Solana blockchain**. By leveraging **private ultra-low latency Solana nodes (<5ms)** and advanced **simulation & analytics**, this Solana arbitrage bot captures **MEV opportunities across DEXs, lending protocols, liquidations, and cross-chain bridges**.
-
+<div align="center">
+  <a href="../../releases/latest">
+    <img width="1200" alt="Solana MEV Bot – Ultra-Low Latency Arbitrage, Sandwich & Liquidation Engine." src="assets/mev-bot.png" />
+  </a>
+</div>
 This repository contains a **full MEV pipeline**, combining:
 
 * **Real-time mempool scanning**
