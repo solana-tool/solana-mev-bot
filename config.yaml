@@ -1,0 +1,35 @@
+# Example configuration for Solana MEV Bot
+rpc_nodes:
+  - url: "https://private-solana-node-1.local"
+    priority: 1
+    latency_ms: 3
+  - url: "https://private-solana-node-2.local"
+    priority: 2
+    latency_ms: 4
+
+wallet:
+  # Path to encrypted keypair file. Keep this file offline and secure.
+  keypair_path: "wallet.json"
+
+strategies:
+  arbitrage:
+    enabled: true
+    min_profit_usd: 2.0
+    max_slippage: 0.005
+  sandwich:
+    enabled: true
+    max_front_run_size: 1000
+    max_back_run_size: 1000
+  liquidation:
+    enabled: true
+    target_protocols:
+      - "solend"
+      - "mango"
+
+priority_fee:
+  base_compute_unit_price: 0.000001
+  dynamic_adjustment: true
+
+monitoring:
+  dashboard_port: 8080
+  telegram_webhook: ""
